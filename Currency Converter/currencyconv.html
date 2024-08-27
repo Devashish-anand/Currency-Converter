@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="currencyconv.css">
+    <title>Exchange.GO</title>
+</head>
+<body>
+    <main>
+        <nav class="nav">
+            <div class="nav_content">
+                <a href="#">
+                    <img width="40px" src="logo.svg">
+                    <p>Exchange.GO</p>
+                </a>
+
+                <div class="dropdown">
+                    <button id="dropdownButton" class="secondaryButton">
+                        History
+                    </button>
+                    <ul class="dropdown_content">
+                        <li>No conversions yet.</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="section_heading">
+                <h1>Currency Converter &#128200;</h1>
+                <p>Everything you need for your daily use</p>
+            </div>
+
+            <div class="converter">
+                <div class="converter_field">
+                    <div class="field_element">
+                        <label for="amount">Enter amount:</label>
+                        <input type="number" name="amount" id="amount" placeholder="0.00">
+                    </div>
+
+                    <div class="field_element">
+                        <label for="fromCurrency">From:</label>
+                        <select name="fromCurrency" id="fromCurrency">
+                            <option value="">Select a Currency</option>
+                        </select>
+                    </div>
+
+                    <button class="secondaryButton" id="swapButton">
+                        <svg style="rotate: 90deg; width: 30px; stroke: black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/>
+                        </svg>
+                    </button>
+
+                    <div class="field_element">
+                        <label for="toCurrency">To:</label>
+                        <select name="toCurrency" id="toCurrency">
+                            <option value="">Select a Currency</option>
+                        </select>
+                    </div>
+
+                    <div class="output">
+                        <h3>Your Result:</h3>
+                        <p>0.00</p>
+                    </div>
+
+                    <button class="convertButton" id="convertButton">Convert</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <p>Copyright &copy; 2024 - Exchange.GO</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="currencyconv.js"></script>
+</body>
+</html>
+
